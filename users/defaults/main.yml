@@ -1,0 +1,5 @@
+---
+# defaults file for users
+user_details:
+   - name: emad
+     file: /home/onepiece/.ssh/ibtikar.pub
