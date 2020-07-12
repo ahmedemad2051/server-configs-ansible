@@ -1,0 +1,11 @@
+---
+# tasks file for ufw
+- name: enable UFW
+  ufw:
+    state: enabled
+- name: Allow access to specific ports
+  ufw:
+    rule: allow
+    port: "{{item}}"
+    proto: tcp
+  with_items: "{{allow_ports}}"
