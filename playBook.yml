@@ -1,0 +1,10 @@
+- hosts:
+  - web
+  user: ubuntu
+  become: true
+  roles:
+    - geerlingguy.pip
+    - geerlingguy.docker
+    - nginx
+    - users
+    - ufw
